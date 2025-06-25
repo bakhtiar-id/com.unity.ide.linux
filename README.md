@@ -18,7 +18,7 @@ A comprehensive Linux-focused Unity package that provides seamless IDE integrati
 4. **Select** `Add package from git URL`
 5. **Paste** the following URL:
    ```
-   https://github.com/bakhtiar-id/com.unity.ide.linux
+   https://github.com/bakhtiar-id/com.unity.ide.linux.git
    ```
 6. **Click** `Add` and wait for installation to complete
 
