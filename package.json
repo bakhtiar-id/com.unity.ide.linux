@@ -2,7 +2,7 @@
   "name": "com.unity.ide.linux",
   "displayName": "Unity IDE Integration for Linux",
   "description": "Unofficial Unity IDE integration package designed specifically for Linux developers. Provides seamless IDE integration support for VS Code engine-based editors with automatic discovery, project generation, debugging support, and comprehensive Linux distribution compatibility including deb/rpm, Snap, and AppImage installations.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "unity": "2019.4",
   "unityRelease": "25f1",
   "dependencies": {
@@ -12,7 +12,7 @@
     "com.unity.ide.linux.tests": "1.1.0"
   },
   "_upm": {
-    "changelog": "1.1.0 (2025-06-25)\n\n- New Features\n  - Added comprehensive support for Visual Studio Code Insiders with automatic discovery\n  - Added comprehensive support for Cursor AI Editor with automatic discovery\n  - Added support for multiple Linux installation methods: deb/rpm, Snap, and AppImage"
+    "changelog": "1.1.1 (2025-06-25)\n\n- Update Editor/Plugins folder"
   },
   "upmCi": {
     "footprint": "74a5df56c8eb360db167269a677bc8e15ff95645"
