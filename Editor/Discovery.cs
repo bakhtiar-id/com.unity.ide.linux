@@ -13,8 +13,11 @@ namespace Microsoft.Unity.IdeLinux.Editor
 	{
 		public static IEnumerable<ILinuxIdeInstallation> GetLinuxIdeInstallations()
 		{
-			// Currently supports VS Code Insiders, with infrastructure ready for other VS Code engine-based editors
+			// Currently supports VS Code Insiders and Cursor, with infrastructure ready for other VS Code engine-based editors
 			foreach (var installation in VSCodeInsidersInstallation.GetLinuxIdeInstallations())
+				yield return installation;
+
+			foreach (var installation in CursorInstallation.GetLinuxIdeInstallations())
 				yield return installation;
 		}
 
@@ -22,8 +25,11 @@ namespace Microsoft.Unity.IdeLinux.Editor
 		{
 			try
 			{
-				// Currently supports VS Code Insiders, with infrastructure ready for other VS Code engine-based editors
+				// Currently supports VS Code Insiders and Cursor, with infrastructure ready for other VS Code engine-based editors
 				if (VSCodeInsidersInstallation.TryDiscoverInstallation(editorPath, out installation))
+					return true;
+
+				if (CursorInstallation.TryDiscoverInstallation(editorPath, out installation))
 					return true;
 			}
 			catch (IOException)
@@ -38,6 +44,7 @@ namespace Microsoft.Unity.IdeLinux.Editor
 		{
 			// Initialize support for VS Code engine-based editors
 			VSCodeInsidersInstallation.Initialize();
+			CursorInstallation.Initialize();
 		}
 	}
 }

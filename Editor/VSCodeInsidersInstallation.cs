@@ -133,7 +133,6 @@ namespace Microsoft.Unity.IdeLinux.Editor
 			var candidates = new List<string>();
 
 			// Currently targeting VS Code Insiders, but can be extended for other VS Code engine-based editors
-			// TODO: Add support for Cursor, Zed, and other VS Code engine variants
 
 			// Well known locations for VS Code Insiders
 			candidates.Add("/usr/bin/code-insiders");
@@ -143,16 +142,9 @@ namespace Microsoft.Unity.IdeLinux.Editor
 			// Snap installations - Insiders only
 			candidates.Add("/snap/bin/code-insiders");
 
-			// Flatpak installations - Insiders only
-			candidates.Add("/var/lib/flatpak/exports/bin/com.visualstudio.code-insiders");
-
 			// User-specific installations - Insiders only
 			var homeDir = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 			candidates.Add(IOPath.Combine(homeDir, ".local/bin/code-insiders"));
-
-			// Common AppImage locations - Insiders only
-			candidates.Add(IOPath.Combine(homeDir, "Applications/code-insiders"));
-			candidates.Add("/opt/vscode-insiders/code-insiders");
 
 			// Preference ordered base directories relative to which desktop files should be searched
 			candidates.AddRange(GetXdgCandidates());

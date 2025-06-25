@@ -1,23 +1,23 @@
 {
   "name": "com.unity.ide.linux",
-  "displayName": "IDE Support for Linux",
-  "description": "Unified IDE integration package for Linux systems supporting VS Code engine-based editors including VS Code Insiders, Cursor, and other compatible editors. Provides automatic discovery, project generation for IntelliSense, debugging support, and seamless Unity integration. This package complements the official Unity VS Code support with enhanced Linux-specific functionality.",
-  "version": "2.0.24",
+  "displayName": "Unity IDE Integration for Linux",
+  "description": "Unofficial Unity IDE integration package designed specifically for Linux developers. Provides seamless IDE integration support for VS Code engine-based editors with automatic discovery, project generation, debugging support, and comprehensive Linux distribution compatibility including deb/rpm, Snap, and AppImage installations.",
+  "version": "1.1.0",
   "unity": "2019.4",
   "unityRelease": "25f1",
   "dependencies": {
     "com.unity.test-framework": "1.1.9"
   },
   "relatedPackages": {
-    "com.unity.ide.linux.tests": "2.0.24"
+    "com.unity.ide.linux.tests": "1.1.0"
   },
   "_upm": {
-    "changelog": "Integration:\n\n- Monitor `additionalfile` extension by default.\n- Try opening a Visual Studio Code workspace if there's one (`.code-workspace` file in the Unity project).\n\nProject generation:\n\n- Identify `asset`, `meta`, `prefab` and `unity` files as `yaml` (Visual Studio Code).\n- Add `sln`/`csproj` file nesting (Visual Studio Code).\n- Improve SDK style project generation."
+    "changelog": "1.1.0 (2025-06-25)\n\n- New Features\n  - Added comprehensive support for Visual Studio Code Insiders with automatic discovery\n  - Added comprehensive support for Cursor AI Editor with automatic discovery\n  - Added support for multiple Linux installation methods: deb/rpm, Snap, and AppImage"
   },
   "upmCi": {
     "footprint": "74a5df56c8eb360db167269a677bc8e15ff95645"
   },
-  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.ide.linux@2.0/manual/index.html",
+  "documentationUrl": "",
   "repository": {
     "url": "https://github.cds.internal.unity3d.com/unity/com.unity.ide.linux.git",
     "type": "git",

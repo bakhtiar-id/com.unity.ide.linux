@@ -72,7 +72,7 @@ namespace Microsoft.Unity.IdeLinux.Editor
 			}
 			catch (Exception ex)
 			{
-				Debug.LogError($"Error detecting Visual Studio installations: {ex}");
+				Debug.LogError($"Error detecting IDE installations: {ex}");
 				return new Dictionary<string, ILinuxIdeInstallation>();
 			}
 		}
@@ -218,7 +218,7 @@ namespace Microsoft.Unity.IdeLinux.Editor
 
 			if (!Discovery.TryDiscoverInstallation(editorPath, out var installation))
 			{
-				Debug.LogWarning($"Visual Studio executable {editorPath} is not found. Please change your settings in Edit > Preferences > External Tools.");
+				Debug.LogWarning($"IDE executable {editorPath} is not found. Please change your settings in Edit > Preferences > External Tools.");
 				return false;
 			}
 
