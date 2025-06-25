@@ -12,7 +12,7 @@
     "com.unity.ide.linux.tests": "1.1.0"
   },
   "_upm": {
-    "changelog": "1.1.1 (2025-06-25)\n\n- Update Editor/Plugins folder"
+    "changelog": "1.1.2 (2026-06-25)\n\n- Push missing .meta file"
   },
   "upmCi": {
     "footprint": "74a5df56c8eb360db167269a677bc8e15ff95645"
